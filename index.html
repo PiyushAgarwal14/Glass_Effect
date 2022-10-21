@@ -1,110 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <style>
+      body {
+        background-repeat: no-repeat;
+        background-image: url("wp2737727.jpg");
+        background-size: 1800px 800px;
+      }
 
-        body{
-            background-repeat: no-repeat;
-            background-image: url("wp2737727.jpg");
-            background-size: 1800px 800px;
-            
+      .name {
+        color: white;
+        text-align: center;
+      }
+      .desc {
+        /* text-align: justify; */
+        color: whitesmoke;
+      }
+
+      .card {
+        background-color: rgba(12, 30, 45, 0.7);
+        backdrop-filter: blur(14px);
+        margin-left: 25rem;
+        margin-right: 25rem;
+        margin-top: 15rem;
+        padding: 10px 10px 10px 10px;
+
+        border-radius: 5px;
+        box-shadow: -6px 7px black;
+      }
+
+      .person {
+        /* margin-left: 315px; */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 79%;
+      }
+
+      a:hover{
+        background-color: gray;
+      }
+
+      a:active{
+        background-color: white;
+        color: black;
+      }
+      .follow {
+        width: 70px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+        background-color: #051094;
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 5px 24px 5px 24px;
+        border-radius: 5px;
+        margin-top: 2rem;
+      }
+
+      @media only screen and (max-width: 600px) {
+        body {
+          background-image: url("mob.jpg");
+          background-size: 100%;
         }
 
-        .name{
-            color: white;
-            text-align: center;
-            
-        }
-        .desc{
-            
-            /* text-align: justify; */
-            color: whitesmoke;
+        .card {
+          margin-left: 4rem;
+          margin-right: 4rem;
         }
 
-        .card{
-            background-color: rgba(12, 30, 45, 0.7);
-            backdrop-filter: blur(14px);
-            margin-left: 25rem;
-            margin-right: 25rem;
-            margin-top: 15rem;
-            padding: 10px 10px 10px 10px;
-
-            border-radius: 5px;
-            box-shadow: -6px 7px black;
+        .desc {
+          /* text-align: justify; */
         }
 
-        .person{
-            /* margin-left: 315px; */
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 79%;
+        .person {
+          /* margin-left: 70px; */
+          width: fit-content !important;
+          height: fit-content !important;
         }
 
-        .follow{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-
-            background-color: #051094;
-            color: whitesmoke;
-            padding: 5px 24px 5px 24px;
-            border-radius: 5px;
-            margin-top: 2rem;
-            
-            
+        .follow {
+          /* margin-left: 60px; */
         }
-
-        @media only screen and (max-width: 600px){
-            body{
-                background-image: url("mob.jpg");
-                background-size: 100%;
-            }
-            
-            .card{
-                margin-left: 4rem;
-                margin-right: 4rem;
-            }
-
-            .desc{
-                /* text-align: justify; */
-            }
-
-            .person{
-                /* margin-left: 70px; */
-                width: fit-content!important;
-                height: fit-content!important;
-            }
-
-            .follow{
-                /* margin-left: 60px; */
-
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="card">
+      <img class="person" src="first.png" alt="person" />
+      <p class="name"><b>Piyush Agarwal</b></p>
 
-        <img class="person" src="person.jpg" alt="person">
-        <p class="name"><B>Person</B></p>
+      <p class="desc">
+        My name is Piyush Agarwal, I'm a Web Developer ( but currently I'm
+        Learning React js ) , Designer & Photo editor. My
+        specialization was in UI frontend Development but in backend I know PHP
+        language and this website was designed and created by me. You can
+        contact me by this website. My skills in Web Development (HTML, CSS, JS,
+        PHP, BOOTSTRAP, WORDPRESS)
+      </p>
 
-        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nisi tempore quis explicabo dolore unde error illo 
-            veniam hic, quasi corporis quisquam, suscipit ipsam temporibus rem porro ex odio in.</p>
-
-            <button class="follow">Follow</button>
+     <a href="http://piyushagarwal.rf.gd" target="_blank" <button class="follow">Follow</button> </a>
     </div>
-</body>
+  </body>
 </html>
 
- <script>
+<script>
 document.addEventListener('contextmenu', function(e) {
   alert("You Can Not Do This!");
   e.preventDefault();
 });
-</script> 
+</script>
