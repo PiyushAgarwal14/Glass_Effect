@@ -23,10 +23,15 @@
       }
 
       .card {
+        width: 35em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         background-color: rgba(12, 30, 45, 0.7);
         backdrop-filter: blur(2px);
-        margin-left: 25rem;
-        margin-right: 25rem;
+        /* margin-left: 25rem;
+        margin-right: 25rem; */
+        
         margin-top: 15rem;
         padding: 10px 10px 10px 10px;
 
@@ -107,11 +112,10 @@
     
       }
 
-      @media only screen and (max-width: 912px) {
+      @media only screen and (max-width: 280px) {
         .card {
            
-            margin-left: 8rem;
-            margin-right: 8rem;
+            width: 15em!important;
             
         }
     
@@ -119,28 +123,37 @@
 
       @media only screen and (max-width: 912px){
         .card {
-            margin-left: 1rem;
-            margin-right: 1rem;
-            margin-top: 5rem;
-        }
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 5rem;
+          width: 18em;
+        } 
     }
     </style>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
   </head>
   <body>
-    <div class="card">
-      <img class="person" src="first.png" alt="person" />
-      <p class="name"><b>Piyush Agarwal</b></p>
 
-      <p class="desc">
-        My name is Piyush Agarwal, I'm a Web Developer ( but currently I'm
-        Learning React js ) , Designer & Photo editor. My
-        specialization was in UI frontend Development but in backend I know PHP
-        language and this website was designed and created by me. You can
-        contact me by this website. My skills in Web Development (HTML, CSS, JS,
-        PHP, BOOTSTRAP, WORDPRESS)
-      </p>
+    <div style="display:block; margin-left:50%;">
+    <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/PiyushAgarwal14" role="button"><i class="fab fa-github fa-2xl"></i></a>
+    </div>
+    <div class="container">
+      <div class="card">
+        <img class="person" src="first.png" alt="person" />
+        <p class="name"><b>Piyush Agarwal</b></p>
 
-     <a href="http://piyushagarwal.rf.gd" target="_blank" <button class="follow">Follow</button> </a>
+        <p class="desc">
+          My name is Piyush Agarwal, I'm a Web Developer ( but currently I'm
+          Learning React js ) , Designer & Photo editor. My
+          specialization was in UI frontend Development but in backend I know PHP
+          language and this website was designed and created by me. You can
+          contact me by this website. My skills in Web Development (HTML, CSS, JS,
+          PHP, BOOTSTRAP, WORDPRESS)
+        </p>
+
+      <a href="http://piyushagarwal.rf.gd" target="_blank" <button class="follow">Follow</button> </a>
+      </div>
     </div>
   </body>
 </html>
@@ -150,4 +163,4 @@ document.addEventListener('contextmenu', function(e) {
   alert("You Can Not Do This!");
   e.preventDefault();
 });
-</script>
+</script> 
